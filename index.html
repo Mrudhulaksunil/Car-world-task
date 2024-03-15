@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <h1 class="text-center text-primary mt-5">Car World</h1>
+    <div class="row m-2">
+        <div class="col-5 mx-3 border border-5 border-light " style="border-radius: 10px;box-shadow: 2px 2px 2px 2px rgb(110, 104, 104);">
+            <h4 class="text-center text-primary">Enter Details</h4>
+            <p >Car Brand</p>
+            <input type="text" class="form-control" placeholder="Car Brand" id="cbrand">
+            <p>Price</p>
+            <input type="text" class="form-control" placeholder="Price" id="price1">
+            <p>Key</p>
+            <input type="text" class="form-control " placeholder="Key" id="key1">
+            <button class="btn btn-outline-success m-3" onclick="enterDetails()">Store Records</button>
+
+        </div>
+        <div class="col-3 me-3 border border-5 border-light " style="border-radius: 10px;box-shadow: 2px 2px 2px 2px rgb(110, 104, 104);">
+            <h4 class="text-center text-primary">Enter Key to Retrieve Item</h4>
+            <p>Key</p>
+            <input type="text" class="form-control " placeholder="Key" id="retrieve">
+            <button class="btn btn-outline-primary m-3" onclick="retrieveRec()">Retrieve Records</button>
+            <div id="result"></div>
+
+
+        </div>
+        <div class="col-3 border border-5 border-light " style="border-radius: 10px;box-shadow: 2px 2px 2px 2px rgb(110, 104, 104);">
+            <h4 class="text-center text-primary">Enter Key to Delete Item</h4>
+            <p>Key</p>
+            <input type="text" class="form-control " placeholder="Key" id="remove">
+            <button class="btn btn-outline-danger m-3"onclick='deleteRec()' >Remove Records</button>
+
+        </div>
+    </div>
+    <div class=" row text-center  ">
+        <button style="margin-left: 10%;" class="btn btn-outline-dark  mt-5 w-75 " onclick="clearAll()">Clear All Records</button>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
